@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Library</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Music Library</h1>
+        <input type="text" id="search" placeholder="Search for songs...">
+    </header>
+
+    <button id="toggle-filters">Masquer les filtres</button>
+    
+    <div id="filters" class="filters">
+        <h3>Humeur</h3>
+        <label><input type="checkbox"> Optimiste/énergique</label><br>
+        <label><input type="checkbox"> Heureux/joyeux</label><br>
+        <label><input type="checkbox"> Inspirant/édifiant</label><br>
+        <label><input type="checkbox"> Épique/puissant</label><br>
+        <label><input type="checkbox"> Dramatique/émotionnel</label><br>
+        <!-- Add more filters as needed -->
+    </div>
+
+    <div class="song-list">
+        <div class="song">
+            <img src="song1.jpg" alt="Song 1 Image">
+            <div class="song-details">
+                <p>Le chant du coq - 2:15</p>
+                <button onclick="playMusic('song1')">▶</button>
+            </div>
+            <audio id="song1" src="song1.mp3"></audio>
+        </div>
+        <div class="song">
+            <img src="song2.jpg" alt="Song 2 Image">
+            <div class="song-details">
+                <p>Chant de danse - 3:30</p>
+                <button onclick="playMusic('song2')">▶</button>
+            </div>
+            <audio id="song2" src="song2.mp3"></audio>
+        </div>
+        <div class="song">
+            <img src="song1.jpg" alt="Song 1 Image">
+            <div class="song-details">
+                <p>Le chant du coq - 2:15</p>
+                <button onclick="playMusic('song1')">▶</button>
+            </div>
+            <audio id="song1" src="song1.mp3"></audio>
+        </div>
+        <div class="song">
+            <img src="song1.jpg" alt="Song 1 Image">
+            <div class="song-details">
+                <p>Le chant du coq - 2:15</p>
+                <button onclick="playMusic('song1')">▶</button>
+            </div>
+            <audio id="song1" src="song1.mp3"></audio>
+        </div>
+        <div class="song">
+            <img src="song1.jpg" alt="Song 1 Image">
+            <div class="song-details">
+                <p>Le chant du coq - 2:15</p>
+                <button onclick="playMusic('song1')">▶</button>
+            </div>
+            <audio id="song1" src="song1.mp3"></audio>
+        </div>
+        <div class="song">
+            <img src="song1.jpg" alt="Song 1 Image">
+            <div class="song-details">
+                <p>Le chant du coq - 2:15</p>
+                <button onclick="playMusic('song1')">▶</button>
+            </div>
+            <audio id="song1" src="song1.mp3"></audio>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
